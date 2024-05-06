@@ -104,4 +104,14 @@ button:hover{
 
 #resultado{
     text-align: center;
+    color: var(--textos-titulo);
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+}
+
+#texto_subtitulo{
+    text-align: center;
+    color: var(--textos-titulo);
+    font-family: 'Bebas Neue';
+    font-size: 20px;
 }
