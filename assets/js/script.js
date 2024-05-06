@@ -12,7 +12,7 @@ function MeuEscopo(){
 
         const imcDoUsuario = peso.value / (altura.value * altura.value);
 
-        if(imcDoUsuario === Number){
+        if(typeof(imcDoUsuario) === 'number' ){
             resultado.innerHTML = `<p>${imcDoUsuario.toFixed(2)}</p>`;
 
             if(imcDoUsuario < 18.5){
@@ -46,6 +46,8 @@ function MeuEscopo(){
         }
         else{
             resultado.innerHTML = `<p>Por favor digite um numero valido.</p>`
+            texto_abaixo.innerHTML = `<p> </p>`;
+            console.log(typeof(imcDoUsuario));
         }
     }
 
