@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+}
+
+:root{
+    --textos-titulo: rgb(208, 207, 207);
+    --textos-tabela: #7e8586; 
+    --fundo-conteiner: #22272b;
+}
+
+body{
+    background-color: #494e54;
+}
+
+#conteiner{
+    background-color: #22272b;
+
+    padding: 40px;
+    align-items: center;
+    margin: 60px auto;
+    max-width: 350px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.27)
+}
+
+h1{
+    color: var(--textos-titulo);
+    font-family: 'Bebas Neue';
+}
+
+table{
+    position: relative;
+    width: 400px;
+    color: var(--textos-tabela);
+    font-family: 'Rubik';
+    margin: 30px 0px;
+}
+
+#texto_imc{
+    text-align: left;
+}
+
+#texto_resultado{
+    text-align: left;
+}
+
+#texto_calcule_seu_imc{
+    margin: 20px 0px;
+}
+
+
+
+#altura_Usuario, #peso_Usuario{
+    width: 100%;
+    
+    overflow: hidden;
+    background-color: var(--fundo-conteiner);
+    border: 1px solid;
+    border-radius: 15px;
+    border-color:  rgba(208, 207, 207, 0.312);
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Bebas Neue';
+    color: #9ca4a5;
+}
+
+input::-webkit-inner-spin-button, input::-webkit-progress-bar{
+    display: none;
+}
+
+#texto_do_input_altura, #texto_do_input_peso{
+    position: relative;
+    color: var(--textos-tabela);
+    font-family: 'Bebas Neue';
+    margin: 10px;
+}
+
+
+#botao{
+    margin: 30px auto;
+    text-align: center;
+}
+
+button{
+    height: 30px;
+    width: 80px;
+    border-radius: 80px;
+    background-color: var(--fundo-conteiner);
+    border: 1px solid;
+    border-color: rgba(208, 207, 207, 0.312);
+    color: var(--textos-titulo);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #3a4044;
+    transition: 1s;
+}
+
+#resultado{
+    text-align: center;
+}
